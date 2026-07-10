@@ -55,120 +55,120 @@ const router = useRouter()
 
 const questions = [
   {
-    question: '肚子饿的时候，你的反应是？',
+    question: '奶龙喊你一起干饭，你会？',
     options: [
-      { text: '立刻找吃的，一刻也等不了', personalityId: 1 },
-      { text: '先看看手机，饿一会儿也没关系', personalityId: 2 },
-      { text: '想着先工作，忙完再吃', personalityId: 6 },
-      { text: '纠结吃什么，想半天', personalityId: 5 }
+      { text: '立刻冲过去！干饭人干饭魂！', personalityId: 1 },
+      { text: '先问清楚吃什么', personalityId: 5 },
+      { text: '假装没听见，继续玩手机', personalityId: 2 },
+      { text: '问奶龙能不能打包', personalityId: 3 }
     ]
   },
   {
-    question: '手机电量低于多少会让你焦虑？',
+    question: '奶龙说要减肥，你觉得他能坚持多久？',
     options: [
-      { text: '低于20%才会慌', personalityId: 4 },
-      { text: '低于50%就开始找充电器', personalityId: 2 },
-      { text: '低于80%就紧张', personalityId: 2 },
-      { text: '随时保持满电，从不焦虑', personalityId: 11 }
+      { text: '坚持不了5分钟', personalityId: 7 },
+      { text: '能坚持三天', personalityId: 6 },
+      { text: '肯定能坚持！', personalityId: 11 },
+      { text: '管他呢，先吃再说', personalityId: 1 }
     ]
   },
   {
-    question: '刷到别人炫富的视频，你会？',
+    question: '奶龙早上赖床不起，小七喊他起床，你觉得谁会赢？',
     options: [
-      { text: '羡慕，幻想自己也能暴富', personalityId: 3 },
-      { text: '划过去，不关我事', personalityId: 4 },
-      { text: '研究他是怎么赚到钱的', personalityId: 6 },
-      { text: '酸一下，然后继续刷', personalityId: 13 }
+      { text: '奶龙赢，继续睡', personalityId: 7 },
+      { text: '小七赢，强制拖走', personalityId: 5 },
+      { text: '用美食诱惑奶龙起床', personalityId: 1 },
+      { text: '两人打成平手', personalityId: 4 }
     ]
   },
   {
-    question: '在KTV唱歌，你会？',
+    question: '奶龙不小心弄坏了小七的自行车，你会？',
     options: [
-      { text: '麦霸附体，抢着唱', personalityId: 11 },
-      { text: '默默坐在角落听别人唱', personalityId: 4 },
-      { text: '只和熟人一起唱', personalityId: 4 },
-      { text: '疯狂点歌但不敢唱', personalityId: 10 }
+      { text: '帮奶龙一起想办法修', personalityId: 10 },
+      { text: '让奶龙自己承担后果', personalityId: 13 },
+      { text: '假装没看见', personalityId: 4 },
+      { text: '帮奶龙找借口', personalityId: 2 }
     ]
   },
   {
-    question: '制定新年计划，你的习惯是？',
+    question: '奶龙带你去外星旅游，你第一件事做什么？',
     options: [
-      { text: '写得满满当当，一个没完成', personalityId: 5 },
-      { text: '写几条简单的，尽力完成', personalityId: 6 },
-      { text: '从不制定计划，走一步看一步', personalityId: 7 },
-      { text: '计划赶不上变化，算了吧', personalityId: 5 }
+      { text: '找外星美食', personalityId: 1 },
+      { text: '拍照发朋友圈', personalityId: 11 },
+      { text: '先规划好路线', personalityId: 5 },
+      { text: '跟着奶龙瞎逛', personalityId: 7 }
     ]
   },
   {
-    question: '看到励志视频，你会？',
+    question: '奶龙说要教你喷火技能，你会？',
     options: [
-      { text: '立刻热血沸腾，坚持3天', personalityId: 6 },
-      { text: '收藏起来，以后看', personalityId: 5 },
-      { text: '无感，继续刷搞笑视频', personalityId: 7 },
-      { text: '真的受到激励，坚持下去', personalityId: 6 }
+      { text: '认真学习，争取学会', personalityId: 6 },
+      { text: '害怕被烧到，拒绝学习', personalityId: 4 },
+      { text: '想学但怕烫到嘴', personalityId: 12 },
+      { text: '让奶龙表演给我看', personalityId: 10 }
     ]
   },
   {
-    question: '晚上几点睡觉？',
+    question: '奶龙问你要零食吃，你会？',
     options: [
-      { text: '11点前准时睡', personalityId: 6 },
-      { text: '12点左右睡', personalityId: 7 },
-      { text: '凌晨2-3点睡', personalityId: 7 },
-      { text: '通宵是家常便饭', personalityId: 7 }
+      { text: '全部给他，反正他也吃不完', personalityId: 1 },
+      { text: '只给一点，怕他吃太多', personalityId: 8 },
+      { text: '不给，自己留着吃', personalityId: 13 },
+      { text: '和他分享一半', personalityId: 10 }
     ]
   },
   {
-    question: '奶茶对你来说是？',
+    question: '奶龙想看《龙龙大怪兽》，你会？',
     options: [
-      { text: '续命神器，每天必喝', personalityId: 8 },
-      { text: '偶尔喝一杯', personalityId: 1 },
-      { text: '从不喝，健康最重要', personalityId: 6 },
-      { text: '戒了无数次，每次失败', personalityId: 8 }
+      { text: '陪他一起看，超开心！', personalityId: 10 },
+      { text: '觉得幼稚，不看', personalityId: 13 },
+      { text: '边看边吐槽剧情', personalityId: 2 },
+      { text: '看一会儿就睡着了', personalityId: 7 }
     ]
   },
   {
-    question: '双十一购物节，你会？',
+    question: '奶龙邀请你去帮小七的爷爷种地，你会？',
     options: [
-      { text: '提前列清单，理性消费', personalityId: 5 },
-      { text: '疯狂剁手，买完后悔', personalityId: 9 },
-      { text: '啥也不买，省钱要紧', personalityId: 3 },
-      { text: '帮别人凑单，自己不买', personalityId: 10 }
+      { text: '积极帮忙，认真干活', personalityId: 6 },
+      { text: '去了但一直在摸鱼', personalityId: 7 },
+      { text: '帮着帮着就去抓鱼了', personalityId: 1 },
+      { text: '直接拒绝，太累了', personalityId: 4 }
     ]
   },
   {
-    question: '和朋友聊天，你是？',
+    question: '奶龙不小心把玉米烧成了烤玉米，你会？',
     options: [
-      { text: '话痨，停不下来', personalityId: 10 },
-      { text: '倾听者，很少说话', personalityId: 4 },
-      { text: '偶尔插几句话', personalityId: 4 },
-      { text: '疯狂玩梗，气氛担当', personalityId: 10 }
+      { text: '没关系，烤玉米更好吃！', personalityId: 1 },
+      { text: '批评奶龙太粗心', personalityId: 13 },
+      { text: '帮奶龙一起想办法补救', personalityId: 10 },
+      { text: '假装没看见，偷偷溜走', personalityId: 4 }
     ]
   },
   {
-    question: '照镜子时，你觉得自己？',
+    question: '奶龙问你他和小七谁更聪明，你会？',
     options: [
-      { text: '太完美了，忍不住多看几眼', personalityId: 11 },
-      { text: '一般般，能看就行', personalityId: 4 },
-      { text: '有点丑，不想看', personalityId: 4 },
-      { text: '还行，就是有点胖', personalityId: 1 }
+      { text: '当然是奶龙最聪明！', personalityId: 11 },
+      { text: '小七更聪明', personalityId: 13 },
+      { text: '各有各的聪明', personalityId: 10 },
+      { text: '假装没听见', personalityId: 4 }
     ]
   },
   {
-    question: '去陌生的地方，你会？',
+    question: '奶龙迷路了，你会？',
     options: [
-      { text: '跟着导航走，从不迷路', personalityId: 5 },
-      { text: '经常迷路，全靠问人', personalityId: 12 },
-      { text: '让别人带路，自己不动脑', personalityId: 12 },
-      { text: '凭感觉走，随缘', personalityId: 7 }
+      { text: '和他一起找路，不急不慌', personalityId: 12 },
+      { text: '打开导航帮他找路', personalityId: 5 },
+      { text: '让他自己摸索', personalityId: 13 },
+      { text: '跟着他一起迷路', personalityId: 7 }
     ]
   },
   {
-    question: '别人提出一个观点，你会？',
+    question: '奶龙说他是宇宙第一可爱，你会？',
     options: [
-      { text: '不管对错先反驳', personalityId: 13 },
-      { text: '认同就点赞，不认同就忽略', personalityId: 4 },
-      { text: '认真思考后再讨论', personalityId: 5 },
-      { text: '表面认同，内心吐槽', personalityId: 13 }
+      { text: '同意！奶龙最可爱！', personalityId: 11 },
+      { text: '反驳他，你才是', personalityId: 13 },
+      { text: '不置可否，笑笑就好', personalityId: 4 },
+      { text: '夸他两句，他会很开心', personalityId: 10 }
     ]
   }
 ]
