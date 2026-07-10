@@ -7,6 +7,16 @@
           <span class="nailong-base">🐉</span>
         </div>
         <h1 class="result-title">{{ personality.name }}</h1>
+        <div class="secondary-traits" v-if="secondaryPersonalities.length">
+          <span class="traits-label">次要特征：</span>
+          <span 
+            v-for="trait in secondaryPersonalities" 
+            :key="trait.id" 
+            class="trait-tag"
+          >
+            {{ trait.emoji }} {{ trait.name }}
+          </span>
+        </div>
       </div>
       
       <div class="result-content">
@@ -171,6 +181,7 @@ const personalities = [
 
 const showReal = ref(false)
 const personality = ref(null)
+const secondaryPersonalities = ref([])
 
 const getPersonality = (id) => {
   return personalities.find(p => p.id === id) || personalities[0]
@@ -179,6 +190,9 @@ const getPersonality = (id) => {
 onMounted(() => {
   const score = parseInt(localStorage.getItem('personalityScore')) || 12
   personality.value = getPersonality(score)
+  
+  const secondaryTraits = JSON.parse(localStorage.getItem('secondaryTraits') || '[]')
+  secondaryPersonalities.value = secondaryTraits.map(id => getPersonality(id)).filter(Boolean)
 })
 
 const openEgg = () => {
@@ -366,6 +380,28 @@ const shareResult = () => {
 
 .egg-btn-icon {
   font-size: 35px;
+}
+
+.secondary-traits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.traits-label {
+  font-size: 14px;
+  color: #8B7355;
+}
+
+.trait-tag {
+  font-size: 13px;
+  color: #FF6B35;
+  background: #FFF3E0;
+  padding: 5px 12px;
+  border-radius: 20px;
 }
 
 @keyframes slide-down {

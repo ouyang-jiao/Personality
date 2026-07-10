@@ -57,118 +57,118 @@ const questions = [
   {
     question: '奶龙喊你一起干饭，你会？',
     options: [
-      { text: '立刻冲过去！干饭人干饭魂！', personalityId: 1 },
-      { text: '先问清楚吃什么', personalityId: 5 },
-      { text: '假装没听见，继续玩手机', personalityId: 2 },
-      { text: '问奶龙能不能打包', personalityId: 3 }
+      { text: '立刻冲过去！干饭人干饭魂！', traits: { 1: 5, 8: 2 } },
+      { text: '先问清楚吃什么', traits: { 5: 4, 12: 1 } },
+      { text: '假装没听见，继续玩手机', traits: { 2: 4, 7: 2 } },
+      { text: '问奶龙能不能打包', traits: { 3: 3, 9: 2 } }
     ]
   },
   {
     question: '奶龙说要减肥，你觉得他能坚持多久？',
     options: [
-      { text: '坚持不了5分钟', personalityId: 7 },
-      { text: '能坚持三天', personalityId: 6 },
-      { text: '肯定能坚持！', personalityId: 11 },
-      { text: '管他呢，先吃再说', personalityId: 1 }
+      { text: '坚持不了5分钟', traits: { 7: 5, 6: 2 } },
+      { text: '能坚持三天', traits: { 6: 4, 5: 2 } },
+      { text: '肯定能坚持！', traits: { 11: 4, 6: 1 } },
+      { text: '管他呢，先吃再说', traits: { 1: 4, 7: 2 } }
     ]
   },
   {
     question: '奶龙早上赖床不起，小七喊他起床，你觉得谁会赢？',
     options: [
-      { text: '奶龙赢，继续睡', personalityId: 7 },
-      { text: '小七赢，强制拖走', personalityId: 5 },
-      { text: '用美食诱惑奶龙起床', personalityId: 1 },
-      { text: '两人打成平手', personalityId: 4 }
+      { text: '奶龙赢，继续睡', traits: { 7: 5, 1: 2 } },
+      { text: '小七赢，强制拖走', traits: { 5: 4, 13: 1 } },
+      { text: '用美食诱惑奶龙起床', traits: { 1: 4, 10: 2 } },
+      { text: '两人打成平手', traits: { 4: 3, 10: 2 } }
     ]
   },
   {
     question: '奶龙不小心弄坏了小七的自行车，你会？',
     options: [
-      { text: '帮奶龙一起想办法修', personalityId: 10 },
-      { text: '让奶龙自己承担后果', personalityId: 13 },
-      { text: '假装没看见', personalityId: 4 },
-      { text: '帮奶龙找借口', personalityId: 2 }
+      { text: '帮奶龙一起想办法修', traits: { 10: 4, 6: 2 } },
+      { text: '让奶龙自己承担后果', traits: { 13: 4, 5: 2 } },
+      { text: '假装没看见', traits: { 4: 4, 2: 1 } },
+      { text: '帮奶龙找借口', traits: { 2: 3, 3: 2 } }
     ]
   },
   {
     question: '奶龙带你去外星旅游，你第一件事做什么？',
     options: [
-      { text: '找外星美食', personalityId: 1 },
-      { text: '拍照发朋友圈', personalityId: 11 },
-      { text: '先规划好路线', personalityId: 5 },
-      { text: '跟着奶龙瞎逛', personalityId: 7 }
+      { text: '找外星美食', traits: { 1: 5, 3: 2 } },
+      { text: '拍照发朋友圈', traits: { 11: 4, 2: 2 } },
+      { text: '先规划好路线', traits: { 5: 4, 12: 2 } },
+      { text: '跟着奶龙瞎逛', traits: { 7: 4, 1: 1 } }
     ]
   },
   {
     question: '奶龙说要教你喷火技能，你会？',
     options: [
-      { text: '认真学习，争取学会', personalityId: 6 },
-      { text: '害怕被烧到，拒绝学习', personalityId: 4 },
-      { text: '想学但怕烫到嘴', personalityId: 12 },
-      { text: '让奶龙表演给我看', personalityId: 10 }
+      { text: '认真学习，争取学会', traits: { 6: 4, 11: 1 } },
+      { text: '害怕被烧到，拒绝学习', traits: { 4: 4, 12: 1 } },
+      { text: '想学但怕烫到嘴', traits: { 12: 4, 4: 2 } },
+      { text: '让奶龙表演给我看', traits: { 10: 3, 11: 2 } }
     ]
   },
   {
     question: '奶龙问你要零食吃，你会？',
     options: [
-      { text: '全部给他，反正他也吃不完', personalityId: 1 },
-      { text: '只给一点，怕他吃太多', personalityId: 8 },
-      { text: '不给，自己留着吃', personalityId: 13 },
-      { text: '和他分享一半', personalityId: 10 }
+      { text: '全部给他，反正他也吃不完', traits: { 1: 4, 10: 2 } },
+      { text: '只给一点，怕他吃太多', traits: { 8: 4, 5: 1 } },
+      { text: '不给，自己留着吃', traits: { 13: 3, 3: 2 } },
+      { text: '和他分享一半', traits: { 10: 4, 1: 2 } }
     ]
   },
   {
     question: '奶龙想看《龙龙大怪兽》，你会？',
     options: [
-      { text: '陪他一起看，超开心！', personalityId: 10 },
-      { text: '觉得幼稚，不看', personalityId: 13 },
-      { text: '边看边吐槽剧情', personalityId: 2 },
-      { text: '看一会儿就睡着了', personalityId: 7 }
+      { text: '陪他一起看，超开心！', traits: { 10: 4, 1: 2 } },
+      { text: '觉得幼稚，不看', traits: { 13: 4, 4: 1 } },
+      { text: '边看边吐槽剧情', traits: { 2: 4, 13: 1 } },
+      { text: '看一会儿就睡着了', traits: { 7: 4, 1: 1 } }
     ]
   },
   {
     question: '奶龙邀请你去帮小七的爷爷种地，你会？',
     options: [
-      { text: '积极帮忙，认真干活', personalityId: 6 },
-      { text: '去了但一直在摸鱼', personalityId: 7 },
-      { text: '帮着帮着就去抓鱼了', personalityId: 1 },
-      { text: '直接拒绝，太累了', personalityId: 4 }
+      { text: '积极帮忙，认真干活', traits: { 6: 5, 5: 2 } },
+      { text: '去了但一直在摸鱼', traits: { 7: 4, 1: 2 } },
+      { text: '帮着帮着就去抓鱼了', traits: { 1: 4, 7: 1 } },
+      { text: '直接拒绝，太累了', traits: { 4: 3, 7: 2 } }
     ]
   },
   {
     question: '奶龙不小心把玉米烧成了烤玉米，你会？',
     options: [
-      { text: '没关系，烤玉米更好吃！', personalityId: 1 },
-      { text: '批评奶龙太粗心', personalityId: 13 },
-      { text: '帮奶龙一起想办法补救', personalityId: 10 },
-      { text: '假装没看见，偷偷溜走', personalityId: 4 }
+      { text: '没关系，烤玉米更好吃！', traits: { 1: 4, 10: 2 } },
+      { text: '批评奶龙太粗心', traits: { 13: 4, 5: 1 } },
+      { text: '帮奶龙一起想办法补救', traits: { 10: 4, 6: 2 } },
+      { text: '假装没看见，偷偷溜走', traits: { 4: 3, 2: 1 } }
     ]
   },
   {
     question: '奶龙问你他和小七谁更聪明，你会？',
     options: [
-      { text: '当然是奶龙最聪明！', personalityId: 11 },
-      { text: '小七更聪明', personalityId: 13 },
-      { text: '各有各的聪明', personalityId: 10 },
-      { text: '假装没听见', personalityId: 4 }
+      { text: '当然是奶龙最聪明！', traits: { 11: 5, 10: 1 } },
+      { text: '小七更聪明', traits: { 13: 4, 5: 1 } },
+      { text: '各有各的聪明', traits: { 10: 4, 4: 2 } },
+      { text: '假装没听见', traits: { 4: 3, 2: 1 } }
     ]
   },
   {
     question: '奶龙迷路了，你会？',
     options: [
-      { text: '和他一起找路，不急不慌', personalityId: 12 },
-      { text: '打开导航帮他找路', personalityId: 5 },
-      { text: '让他自己摸索', personalityId: 13 },
-      { text: '跟着他一起迷路', personalityId: 7 }
+      { text: '和他一起找路，不急不慌', traits: { 12: 5, 10: 1 } },
+      { text: '打开导航帮他找路', traits: { 5: 4, 12: 1 } },
+      { text: '让他自己摸索', traits: { 13: 3, 4: 1 } },
+      { text: '跟着他一起迷路', traits: { 7: 4, 12: 1 } }
     ]
   },
   {
     question: '奶龙说他是宇宙第一可爱，你会？',
     options: [
-      { text: '同意！奶龙最可爱！', personalityId: 11 },
-      { text: '反驳他，你才是', personalityId: 13 },
-      { text: '不置可否，笑笑就好', personalityId: 4 },
-      { text: '夸他两句，他会很开心', personalityId: 10 }
+      { text: '同意！奶龙最可爱！', traits: { 11: 5, 10: 1 } },
+      { text: '反驳他，你才是', traits: { 13: 4, 11: 1 } },
+      { text: '不置可否，笑笑就好', traits: { 4: 3, 10: 1 } },
+      { text: '夸他两句，他会很开心', traits: { 10: 4, 11: 1 } }
     ]
   }
 ]
@@ -202,26 +202,40 @@ const nextQuestion = () => {
 }
 
 const calculateResult = () => {
-  const personalityCounts = {}
+  const personalityScores = {}
+  
+  for (let i = 1; i <= 13; i++) {
+    personalityScores[i] = 0
+  }
   
   answers.value.forEach((answerIndex, questionIndex) => {
     if (answerIndex !== null) {
-      const personalityId = questions[questionIndex].options[answerIndex].personalityId
-      personalityCounts[personalityId] = (personalityCounts[personalityId] || 0) + 1
+      const traits = questions[questionIndex].options[answerIndex].traits
+      for (const [personalityId, weight] of Object.entries(traits)) {
+        personalityScores[parseInt(personalityId)] += weight
+      }
     }
   })
   
-  let dominantPersonalityId = 1
-  let maxCount = 0
+  const sortedPersonalities = Object.entries(personalityScores)
+    .map(([id, score]) => ({ id: parseInt(id), score }))
+    .sort((a, b) => b.score - a.score)
   
-  for (const [id, count] of Object.entries(personalityCounts)) {
-    if (count > maxCount) {
-      maxCount = count
-      dominantPersonalityId = parseInt(id)
-    }
+  const topScores = sortedPersonalities.filter(p => p.score === sortedPersonalities[0].score)
+  
+  let dominantPersonalityId
+  if (topScores.length === 1) {
+    dominantPersonalityId = topScores[0].id
+  } else {
+    const randomIndex = Math.floor(Math.random() * topScores.length)
+    dominantPersonalityId = topScores[randomIndex].id
   }
   
   localStorage.setItem('personalityScore', dominantPersonalityId)
+  
+  const secondaryTraits = sortedPersonalities.slice(1, 3).map(p => p.id)
+  localStorage.setItem('secondaryTraits', JSON.stringify(secondaryTraits))
+  
   router.push('/result')
 }
 </script>
